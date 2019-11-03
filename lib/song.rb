@@ -3,8 +3,9 @@ class Song
 
   @@all = []
 
-  def initialize(name)
+  def initialize(name, artist = nil)
     @name = name
+    @artist =artist
     save
   end
 
@@ -22,7 +23,7 @@ class Song
 
     song = Song.new(stripped_file_names[1])
     # song.artist_name=(stripped_file_names[0])
-    song.artist = Artist.new(stripped_file_names[0])
+    #song.artist = Artist.new(stripped_file_names[0])
   end
 
   def save
