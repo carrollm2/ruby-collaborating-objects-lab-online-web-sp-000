@@ -18,12 +18,12 @@ class Song
     file_name_array.each do | fn|
       stripped_file_name = fn.strip
       song = Song.new(stripped_file_names[1])
-      song.artist = Artist.new(stripped_file_names[0]) 
+      song.artist = Artist.new(stripped_file_names[0])
     end
     song
 
     #song = Song.new(stripped_file_names[1])
-    #song.artist = Artist.new(stripped_file_names[0]) 
+    #song.artist = Artist.new(stripped_file_names[0])
 
   end
 
