@@ -15,13 +15,14 @@ class Song
   def self.new_by_filename(file_name)
     file_name_array = file_name.split("-")
 
-    stripped_file_names = []
     file_name_array.each do | fn|
-      stripped_file_names.push(fn.strip)
+      stripped_file_name = fn.strip
+      song = Song.new(stripped_file_names[1])
+      song.artist = Artist.new(stripped_file_names[0]) 
     end
-    stripped_file_names
+    song
 
-    song = Song.new(stripped_file_names[1])
+    #song = Song.new(stripped_file_names[1])
     #song.artist = Artist.new(stripped_file_names[0]) 
 
   end
