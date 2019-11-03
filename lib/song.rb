@@ -22,7 +22,7 @@ class Song
 
     song = Song.new(stripped_file_names[1])
     # song.artist_name=(stripped_file_names[0])
-    @artist = Artist.new(stripped_file_names[0])
+    # @artist = Artist.new(stripped_file_names[0])
   end
 
   def save
