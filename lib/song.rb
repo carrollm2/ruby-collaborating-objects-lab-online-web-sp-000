@@ -16,7 +16,7 @@ class Song
     file_name_array = file_name.split("-")
 
     song = Song.new(file_name_array[1].strip)
-    song.artist = Artist.new(file_name[0].strip)
+    song.artist = Artist.new(file_name_array[0].strip)
     song
 
   end
